@@ -11,25 +11,25 @@ int main(void)
 {
 	int n;
 
-	srand(time(0)); /* Initialize random seed */
-	n = rand() - RAND_MAX / 2; /* Generate a random number and assign it to n */
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	int lastDigit; /* Declare a variable to store the last digit */
-	lastDigit = n % 10; /* Calculate the last digit using modulo operator */
+	int lastDigit;
+	lastDigit = n % 10;
 
-	printf("The string Last digit of %d is", n);
+	printf("The string Last digit of %d is\n", n);
 
 	if (lastDigit > 5)
 	{
-		printf(" greater than 5\n"); /* Print if the last digit is greater than 5 */
+		printf("greater than 5\n");
 	}
 	else if (lastDigit == 0)
 	{
-		printf(" 0\n"); /* Print if the last digit is 0 */
+		printf("0\n");
 	}
 	else
 	{
-		printf(" less than 6 and not 0\n"); /* Print if the last digit is less than 6 and not 0 */
+		printf("less than 6 and not 0\n");
 	}
 
 	return (0);

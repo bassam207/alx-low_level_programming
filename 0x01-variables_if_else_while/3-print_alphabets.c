@@ -10,18 +10,18 @@ int main(void)
 {
 	int n = 97;
 
+	int a = 65;
+
 	while (n <= 122)
 	{
 		putchar(n);
 		n++;
 	}
 
-	int N = 65;
-
-	while (N <= 90)
+	while (a <= 90)
 	{
-		putchar(N);
-		N++;
+		putchar(a);
+		a++;
 	}
 
 	putchar('\n');

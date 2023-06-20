@@ -4,14 +4,14 @@
 */
 void times_table(void)
 {
-	int row;
-	int column;
+	int r;
+	int c;
 
-	for (row = 0; row <= 9; row++)
+	for (r = 0; r <= 9; r++)
 	{
-	for (column = 0; column <= 9; column++)
+	for (c = 0; c <= 9; c++)
 	{
-	int product = row * column;
+	int product = r * c;
 
 	if (product < 10)
 	{
@@ -23,7 +23,7 @@ void times_table(void)
 	_putchar(product / 10 + '0');
 	_putchar(product % 10 + '0');
 	}
-	if (column != 9)
+	if (c != 9)
 	{
 	_putchar(',');
 	_putchar(' ');

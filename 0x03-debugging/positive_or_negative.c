@@ -4,7 +4,7 @@
 *
 * @i: the integer to be test
 *
-* Return: void 
+* Return: void
 */
 void positive_or_negative(int i)
 {

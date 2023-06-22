@@ -1,9 +1,10 @@
 #include "main.h"
-/**
-* positive_or_negative - print sign of the number
+/*
+* positive_or_negative - test integer sign
 *
-* @i: number to print its sign
-* Return: Always void
+* @i: the integer to be test
+*
+* Return: void 
 */
 void positive_or_negative(int i)
 {

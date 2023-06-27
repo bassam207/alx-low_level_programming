@@ -6,7 +6,7 @@
 *return: void
 */
 void puts2(char *str)
-{	
+{
 	int count = 0;
 
 	while (*str != '\0')

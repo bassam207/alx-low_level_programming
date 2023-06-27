@@ -6,11 +6,17 @@
 *return: void
 */
 void puts2(char *str)
-{
+{	
+	int count = 0;
+
 	while (*str != '\0')
 	{
+	if (count % 2 == 0)
+	{
 	_putchar(*str + 0);
-	str += 2;
+	}
+	str++;
+	count++;
 	}
 	_putchar('\n');
 }

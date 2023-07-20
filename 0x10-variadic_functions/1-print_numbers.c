@@ -9,26 +9,18 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	int i = n;
 	va_list nptr;
-	char str[100];
-	unsigned int x;
 
+	if (!n)
+	{
+	printf("\n");
+	return;
+	}
 	va_start(nptr, n);
-	for (x = 0 ; x < n * 4 ; x += 4)
+	while (i--)
 	{
-	str[x] = '%';
-	str[x + 1] = 'd';
-	if (x < (n - 1) * 4)
-	{
-	str[x + 2] = *separator;
-	str[x + 3] = ' ';
+	printf("%d%s", va_arg(nptr, int), i ? (separator ? separator : "") : "\n");
 	}
-	else
-	{
-	str[x + 2] = '\n';
-	str[x + 3] = '\0';
-	}
-	}
-	vprintf(str, nptr);
 	va_end(nptr);
 }

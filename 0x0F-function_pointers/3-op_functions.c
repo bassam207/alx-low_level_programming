@@ -48,7 +48,7 @@ int op_div(int a, int b)
 * op_mod - module two ints
 * @a: the first int
 * @b: the second int
-* return: the int remainder
+* Return: int
 */
 int op_mod(int a, int b)
 {

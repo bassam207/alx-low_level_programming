@@ -19,11 +19,11 @@ list_t *add_node(list_t **head, const char *str)
 	first_node = (list_t *)malloc(sizeof(list_t));
 	}
 	if (first_node == NULL)
-		return (head);
+		return (*head);
 	{
-		first_node->str = str;
-		first_node->next = head;
-		head = first_node;
+		first_node->str =strdup(str);
+		first_node->next = (*head);
+		(*head) = first_node;
 	}
-	return (head);
+	return (*head);
 }

@@ -3,7 +3,7 @@
 /**
 * print_listint - prints all elemnts of linked list
 * @h: pointer to first node of linked list
-*Return: nodes number
+* Return: nodes number
 */
 size_t print_listint(const listint_t *h)
 {

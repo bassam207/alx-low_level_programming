@@ -1,6 +1,5 @@
 #ifndef LISTS_H
 #define LISTS_H
-#define DATA_TYPE char
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

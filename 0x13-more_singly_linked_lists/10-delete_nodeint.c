@@ -6,7 +6,7 @@
 * @index: index of new node
 * Return: 1(success) or -1(fail)
 */
-int delete_nodeint_at_index(listint_t **head, unsig    ned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	list_t *temp = *head;
 	list_t *current = NULL;

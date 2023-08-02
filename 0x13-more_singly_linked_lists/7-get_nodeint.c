@@ -6,7 +6,7 @@
 * @index:index of node
 * Return: pointer to node, or NULL
 */
-istint_t *get_nodeint_at_index(listint_t *head, un    signed int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
 	listint_t *temp = head;

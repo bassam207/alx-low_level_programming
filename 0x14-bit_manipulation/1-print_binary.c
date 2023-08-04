@@ -7,16 +7,19 @@
 */
 void print_binary(unsigned long int n)
 {
-	int bit = sizeof(unsigned long int) * 8;
-	int i;
-	unsigned long int mask;
+	int bit = sizeof(n) * 8;
+	int printed = 0;
 
-	for (i = bit - 1; i >= 0; i--)
+	while (bit)
 	{
-		mask = 1UL << i;
-
-		if ((n & mask) == mask)
+		if (n & 1L << --bit)
+		{
 			_putchar('1');
-		_putchar('0');
+			printed++;
+		}
+		else if (printed)
+			_putchar('0');
 	}
+	if (!printed)
+		_putchar('0');
 }

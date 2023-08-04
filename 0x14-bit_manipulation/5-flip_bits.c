@@ -7,7 +7,7 @@
 * @m: second num
 * Return: number of bits to flib to convert number
 */
-unsigned int flip_bits(unsigned long int n, unsignd long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int xorv = n ^ m;
 	unsigned int count = 0;
